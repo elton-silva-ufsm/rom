@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(19May2025:14:15:29):( xrun -64bit -timescale 1ns/10ps /home/ci_inovador/Documentos/rom/frontend/source/matrix.sv /home/ci_inovador/Documentos/rom/frontend/source/hdec.sv /home/ci_inovador/Documentos/rom/frontend/source/rom.sv /home/ci_inovador/Documentos/rom/frontend/testbench/rom_tb.sv -access +rwc -top rom_tb -define dir_home="../encoder/rom.hex" )&&(./xcelium.d/env.d/env.history.19May2025_14_15_29)

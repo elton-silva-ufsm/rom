@@ -1,0 +1,418 @@
+[05/30 15:40:13      0s] 
+[05/30 15:40:13      0s] Cadence Innovus(TM) Implementation System.
+[05/30 15:40:13      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/30 15:40:13      0s] 
+[05/30 15:40:13      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[05/30 15:40:13      0s] Options:	-stylus -overwrite -db to_drc_lvs.enc 
+[05/30 15:40:13      0s] Date:		Fri May 30 15:40:13 2025
+[05/30 15:40:13      0s] Host:		eltonsilva (x86_64 w/Linux 4.18.0-553.36.1.el8_10.x86_64) (14cores*20cpus*13th Gen Intel(R) Core(TM) i5-13500 24576KB)
+[05/30 15:40:13      0s] OS:		Rocky Linux release 8.10 (Green Obsidian)
+[05/30 15:40:13      0s] 
+[05/30 15:40:13      0s] License:
+[05/30 15:40:13      0s] 		[15:40:13.460145] Configured Lic search path (21.01-s002): 27001@192.168.1.10
+[05/30 15:40:13      0s] 
+[05/30 15:40:13      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[05/30 15:40:13      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/30 15:40:18      4s] 
+[05/30 15:40:18      4s] 
+[05/30 15:40:20      7s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[05/30 15:40:22      8s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[05/30 15:40:22      8s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[05/30 15:40:22      8s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[05/30 15:40:22      8s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[05/30 15:40:22      8s] @(#)CDS: CPE v21.15-s076
+[05/30 15:40:22      8s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[05/30 15:40:22      8s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[05/30 15:40:22      8s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/30 15:40:22      8s] @(#)CDS: RCDB 11.15.0
+[05/30 15:40:22      8s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[05/30 15:40:22      8s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[05/30 15:40:22      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_19649_eltonsilva_ci_inovador_i99xJf.
+
+[05/30 15:40:22      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_19649_eltonsilva_ci_inovador_i99xJf.
+[05/30 15:40:22      8s] 
+[05/30 15:40:22      8s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[05/30 15:40:23      9s] 
+[05/30 15:40:23      9s] **INFO:  MMMC transition support version v31-84 
+[05/30 15:40:23      9s] 
+[05/30 15:40:23      9s] @innovus 1>  read_db to_drc_lvs.enc 
+[05/30 15:40:23      9s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/30 15:40:23      9s] #% Begin load design ... (date=05/30 15:40:23, mem=1008.3M)
+[05/30 15:40:23      9s] Set Default Net Delay as 1000 ps.
+[05/30 15:40:23      9s] Set Default Net Load as 0.5 pF. 
+[05/30 15:40:23      9s] AAE_INFO: switching -siAware from false to true ...
+[05/30 15:40:23      9s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+[05/30 15:40:23      9s] Set Default Input Pin Transition as 0.1 ps.
+[05/30 15:40:23      9s] Set Using Default Delay Limit as 1000.
+[05/30 15:40:23      9s] ##  Process: 45            (User Set)               
+[05/30 15:40:23      9s] ##     Node: (not set)                           
+[05/30 15:40:23      9s] 
+[05/30 15:40:23      9s] ##  Check design process and node:  
+[05/30 15:40:23      9s] ##  Design tech node is not set.
+[05/30 15:40:23      9s] 
+[05/30 15:40:23      9s] Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[05/30 15:40:23      9s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[05/30 15:40:23      9s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[05/30 15:40:23      9s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'high'.
+[05/30 15:40:23      9s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[05/30 15:40:23      9s] **WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[05/30 15:40:23      9s] **WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[05/30 15:40:23      9s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_separate_device_slew_effect_sensitivities' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[05/30 15:40:23      9s] **WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[05/30 15:40:23      9s] Set Default Input Pin Transition as 0.1 ps.
+[05/30 15:40:23      9s] Loading design 'rom' saved by 'Innovus' '21.15-s110_1' on 'Thu May 22 15:23:29 2025'.
+[05/30 15:40:23      9s] Reading slow timing library '/home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[05/30 15:40:23      9s] Read 489 cells in library 'slow_vdd1v0' 
+[05/30 15:40:23      9s] Reading fast timing library '/home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib' ...
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[05/30 15:40:24     10s] Read 489 cells in library 'fast_vdd1v2' 
+[05/30 15:40:24     10s] Ending "PreSetAnalysisView" (total cpu=0:00:00.4, real=0:00:01.0, peak res=1079.2M, current mem=1025.5M)
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] Loading LEF file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/lef/gsclib045_tech.lef ...
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] Loading LEF file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/lef/gsclib045_macro.lef ...
+[05/30 15:40:24     10s] Set DBUPerIGU to M2 pitch 400.
+[05/30 15:40:24     10s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/30 15:40:24     10s] Type 'man IMPLF-200' for more detail.
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] ##  Check design process and node:  
+[05/30 15:40:24     10s] ##  Design tech node is not set.
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] Loading view definition file from /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/viewDefinition.tcl
+[05/30 15:40:24     10s] % Begin Load netlist data ... (date=05/30 15:40:24, mem=1037.4M)
+[05/30 15:40:24     10s] *** Begin netlist parsing (mem=1229.2M) ***
+[05/30 15:40:24     10s] Created 489 new cells from 2 timing libraries.
+[05/30 15:40:24     10s] Reading netlist ...
+[05/30 15:40:24     10s] Backslashed names will retain backslash and a trailing blank character.
+[05/30 15:40:24     10s] Reading verilogBinary netlist '/home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.v.bin'
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] *** Memory Usage v#1 (Current mem = 1240.207M, initial mem = 492.883M) ***
+[05/30 15:40:24     10s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1240.2M) ***
+[05/30 15:40:24     10s] % End Load netlist data ... (date=05/30 15:40:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1051.1M, current mem=1051.1M)
+[05/30 15:40:24     10s] Top level cell is rom.
+[05/30 15:40:24     10s] Hooked 978 DB cells to tlib cells.
+[05/30 15:40:24     10s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1065.3M, current mem=1065.3M)
+[05/30 15:40:24     10s] 1 empty module found.
+[05/30 15:40:24     10s] Starting recursive module instantiation check.
+[05/30 15:40:24     10s] No recursion found.
+[05/30 15:40:24     10s] Building hierarchical netlist for Cell rom ...
+[05/30 15:40:24     10s] *** Netlist is unique.
+[05/30 15:40:24     10s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[05/30 15:40:24     10s] ** info: there are 1075 modules.
+[05/30 15:40:24     10s] ** info: there are 186 stdCell insts.
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] *** Memory Usage v#1 (Current mem = 1291.621M, initial mem = 492.883M) ***
+[05/30 15:40:24     10s] *info: set bottom ioPad orient R0
+[05/30 15:40:24     10s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/30 15:40:24     10s] Type 'man IMPFP-3961' for more detail.
+[05/30 15:40:24     10s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/30 15:40:24     10s] Type 'man IMPFP-3961' for more detail.
+[05/30 15:40:24     10s] Start create_tracks
+[05/30 15:40:24     10s] Loading preference file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/gui.pref.tcl ...
+[05/30 15:40:24     10s] ##  Process: 45            (User Set)               
+[05/30 15:40:24     10s] ##     Node: (not set)                           
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] ##  Check design process and node:  
+[05/30 15:40:24     10s] ##  Design tech node is not set.
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[05/30 15:40:24     10s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[05/30 15:40:24     10s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[05/30 15:40:24     10s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'high'.
+[05/30 15:40:24     10s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[05/30 15:40:24     10s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[05/30 15:40:24     10s] add_rings command will avoid shorts while creating rings.
+[05/30 15:40:24     10s] add_rings command will disallow rings to go over rows.
+[05/30 15:40:24     10s] add_rings command will consider rows while creating rings.
+[05/30 15:40:24     10s] Change floorplan default-technical-site to 'CoreSite'.
+[05/30 15:40:24     10s] Extraction setup Delayed 
+[05/30 15:40:24     10s] *Info: initialize multi-corner CTS.
+[05/30 15:40:24     10s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1333.0M, current mem=1091.0M)
+[05/30 15:40:24     10s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/30 15:40:24     10s] Summary for sequential cells identification: 
+[05/30 15:40:24     10s]   Identified SBFF number: 104
+[05/30 15:40:24     10s]   Identified MBFF number: 0
+[05/30 15:40:24     10s]   Identified SB Latch number: 0
+[05/30 15:40:24     10s]   Identified MB Latch number: 0
+[05/30 15:40:24     10s]   Not identified SBFF number: 16
+[05/30 15:40:24     10s]   Not identified MBFF number: 0
+[05/30 15:40:24     10s]   Not identified SB Latch number: 0
+[05/30 15:40:24     10s]   Not identified MB Latch number: 0
+[05/30 15:40:24     10s]   Number of sequential cells which are not FFs: 32
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/30 15:40:24     10s] Total number of combinational cells: 327
+[05/30 15:40:24     10s] Total number of sequential cells: 152
+[05/30 15:40:24     10s] Total number of tristate cells: 10
+[05/30 15:40:24     10s] Total number of level shifter cells: 0
+[05/30 15:40:24     10s] Total number of power gating cells: 0
+[05/30 15:40:24     10s] Total number of isolation cells: 0
+[05/30 15:40:24     10s] Total number of power switch cells: 0
+[05/30 15:40:24     10s] Total number of pulse generator cells: 0
+[05/30 15:40:24     10s] Total number of always on buffers: 0
+[05/30 15:40:24     10s] Total number of retention cells: 0
+[05/30 15:40:24     10s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[05/30 15:40:24     10s] Total number of usable buffers: 16
+[05/30 15:40:24     10s] List of unusable buffers:
+[05/30 15:40:24     10s] Total number of unusable buffers: 0
+[05/30 15:40:24     10s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[05/30 15:40:24     10s] Total number of usable inverters: 19
+[05/30 15:40:24     10s] List of unusable inverters:
+[05/30 15:40:24     10s] Total number of unusable inverters: 0
+[05/30 15:40:24     10s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[05/30 15:40:24     10s] Total number of identified usable delay cells: 8
+[05/30 15:40:24     10s] List of identified unusable delay cells:
+[05/30 15:40:24     10s] Total number of identified unusable delay cells: 0
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Deleting Cell Server Begin ...
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Deleting Cell Server End ...
+[05/30 15:40:24     10s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1340.9M, current mem=1340.9M)
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/30 15:40:24     10s] Summary for sequential cells identification: 
+[05/30 15:40:24     10s]   Identified SBFF number: 104
+[05/30 15:40:24     10s]   Identified MBFF number: 0
+[05/30 15:40:24     10s]   Identified SB Latch number: 0
+[05/30 15:40:24     10s]   Identified MB Latch number: 0
+[05/30 15:40:24     10s]   Not identified SBFF number: 16
+[05/30 15:40:24     10s]   Not identified MBFF number: 0
+[05/30 15:40:24     10s]   Not identified SB Latch number: 0
+[05/30 15:40:24     10s]   Not identified MB Latch number: 0
+[05/30 15:40:24     10s]   Number of sequential cells which are not FFs: 32
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] Trim Metal Layers:
+[05/30 15:40:24     10s]  Visiting view : analysis_normal_slow_max
+[05/30 15:40:24     10s]    : PowerDomain = none : Weighted F : unweighted  = 36.80 (1.000) with rcCorner = 0
+[05/30 15:40:24     10s]    : PowerDomain = none : Weighted F : unweighted  = 19.40 (1.000) with rcCorner = -1
+[05/30 15:40:24     10s]  Visiting view : analysis_normal_fast_min
+[05/30 15:40:24     10s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 1
+[05/30 15:40:24     10s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Deleting Cell Server Begin ...
+[05/30 15:40:24     10s] 
+[05/30 15:40:24     10s] TimeStamp Deleting Cell Server End ...
+[05/30 15:40:24     10s] Reading floorplan file - /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.fp.gz (mem = 1541.7M).
+[05/30 15:40:24     10s] % Begin Load floorplan data ... (date=05/30 15:40:24, mem=1342.8M)
+[05/30 15:40:24     10s] *info: reset 239 existing net BottomPreferredLayer and AvoidDetour
+[05/30 15:40:24     10s] Deleting old partition specification.
+[05/30 15:40:24     10s] Set FPlanBox to (0 0 115600 27740)
+[05/30 15:40:24     10s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/30 15:40:24     10s] Type 'man IMPFP-3961' for more detail.
+[05/30 15:40:24     10s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/30 15:40:24     10s] Type 'man IMPFP-3961' for more detail.
+[05/30 15:40:24     10s] Start create_tracks
+[05/30 15:40:24     10s]  ... processed partition successfully.
+[05/30 15:40:24     10s] Reading binary special route file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.fp.spr.gz (Created by Innovus v21.15-s110_1 on Thu May 22 15:23:28 2025, version: 1)
+[05/30 15:40:24     10s] Convert 0 swires and 0 svias from compressed groups
+[05/30 15:40:24     10s] 28 swires and 118 svias were compressed
+[05/30 15:40:24     10s] 42 swires and 148 svias were decompressed from small or sparse groups
+[05/30 15:40:24     10s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1342.8M, current mem=1342.8M)
+[05/30 15:40:24     10s] Extracting standard cell pins and blockage ...... 
+[05/30 15:40:24     10s] Pin and blockage extraction finished
+[05/30 15:40:24     10s] Delete all existing relative floorplan constraints.
+[05/30 15:40:24     10s] % End Load floorplan data ... (date=05/30 15:40:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1345.3M, current mem=1345.3M)
+[05/30 15:40:24     10s] Reading congestion map file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.route.congmap.gz ...
+[05/30 15:40:24     10s] % Begin Load SymbolTable ... (date=05/30 15:40:24, mem=1345.3M)
+[05/30 15:40:24     10s] Suppress "**WARN ..." messages.
+[05/30 15:40:24     10s] routingBox: (0 0) (115600 27740)
+[05/30 15:40:24     10s] coreBox:    (5200 5320) (110400 22420)
+[05/30 15:40:24     10s] Un-suppress "**WARN ..." messages.
+[05/30 15:40:24     10s] % End Load SymbolTable ... (date=05/30 15:40:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1346.2M, current mem=1346.2M)
+[05/30 15:40:24     10s] Loading place ...
+[05/30 15:40:24     10s] % Begin Load placement data ... (date=05/30 15:40:24, mem=1346.2M)
+[05/30 15:40:24     10s] Reading placement file - /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.place.gz.
+[05/30 15:40:24     10s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Thu May 22 15:23:28 2025, version# 2) ...
+[05/30 15:40:24     10s] Read Views for adaptive view pruning ...
+[05/30 15:40:24     10s] Read 0 views from Binary DB for adaptive view pruning
+[05/30 15:40:24     10s] *** Checked 2 GNC rules.
+[05/30 15:40:24     10s] *** applyConnectGlobalNets disabled.
+[05/30 15:40:24     10s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1543.7M) ***
+[05/30 15:40:24     10s] Total net length = 1.417e+03 (8.918e+02 5.254e+02) (ext = 2.465e+02)
+[05/30 15:40:24     10s] % End Load placement data ... (date=05/30 15:40:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1346.8M, current mem=1346.8M)
+[05/30 15:40:24     10s] Reading PG file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Thu May 22 15:23:28 2025)
+[05/30 15:40:24     10s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1540.7M) ***
+[05/30 15:40:24     10s] % Begin Load routing data ... (date=05/30 15:40:24, mem=1347.1M)
+[05/30 15:40:24     10s] Reading routing file - /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.route.gz.
+[05/30 15:40:25     10s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Thu May 22 15:23:28 2025 Format: 20.1) ...
+[05/30 15:40:25     10s] *** Total 238 nets are successfully restored.
+[05/30 15:40:25     10s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1541.7M) ***
+[05/30 15:40:25     10s] % End Load routing data ... (date=05/30 15:40:25, total cpu=0:00:00.0, real=0:00:01.0, peak res=1348.9M, current mem=1347.9M)
+[05/30 15:40:25     10s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[05/30 15:40:25     10s] Reading property file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.prop
+[05/30 15:40:25     10s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1544.7M) ***
+[05/30 15:40:25     10s] Reading dirtyarea snapshot file /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom.db.da.gz (Create by Innovus v21.15-s110_1 on Thu May 22 15:23:28 2025, version: 4).
+[05/30 15:40:25     10s] add_rings command will avoid shorts while creating rings.
+[05/30 15:40:25     10s] add_rings command will disallow rings to go over rows.
+[05/30 15:40:25     10s] add_rings command will consider rows while creating rings.
+[05/30 15:40:25     10s] **WARN: (IMPEXT-2523):	Option 'extract_rc_cap_table_basic' should not be used for post_route (extract_rc_effort_level low) mode. It should be used only for  diagnostic or debugging purposes.
+[05/30 15:40:25     10s] Change floorplan default-technical-site to 'CoreSite'.
+[05/30 15:40:25     10s] eee: readRCCornerMetaData, file read unsuccessful: /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/extraction/extractionMetaData.gz
+[05/30 15:40:25     10s] Extraction setup Started 
+[05/30 15:40:25     10s] 
+[05/30 15:40:25     10s] Trim Metal Layers:
+[05/30 15:40:25     10s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[05/30 15:40:25     10s] Reading Capacitance Table File /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/mmmc/gpdk045.basic.CapTbl ...
+[05/30 15:40:25     10s] Cap table was created using Encounter 09.11-s082_1.
+[05/30 15:40:25     10s] Process name: gpdk045.
+[05/30 15:40:25     10s] **WARN: (IMPEXT-2662):	Cap table /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/mmmc/gpdk045.basic.CapTbl does not have the EXTENDED section. It will use only BASIC cap table section for RC extraction.
+[05/30 15:40:25     10s] Reading Capacitance Table File /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/mmmc/gpdk045.basic.CapTbl ...
+[05/30 15:40:25     10s] Cap table was created using Encounter 09.11-s082_1.
+[05/30 15:40:25     10s] Process name: gpdk045.
+[05/30 15:40:25     10s] **WARN: (IMPEXT-2662):	Cap table /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/mmmc/gpdk045.basic.CapTbl does not have the EXTENDED section. It will use only BASIC cap table section for RC extraction.
+[05/30 15:40:25     10s] Summary of Active RC-Corners : 
+[05/30 15:40:25     10s]  
+[05/30 15:40:25     10s]  Analysis View: analysis_normal_slow_max
+[05/30 15:40:25     10s]     RC-Corner Name        : rc_worst
+[05/30 15:40:25     10s]     RC-Corner Index       : 0
+[05/30 15:40:25     10s]     RC-Corner Temperature : 125 Celsius
+[05/30 15:40:25     10s]     RC-Corner Cap Table   : '/home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/mmmc/gpdk045.basic.CapTbl'
+[05/30 15:40:25     10s]     RC-Corner PreRoute Res Factor         : 1
+[05/30 15:40:25     10s]     RC-Corner PreRoute Cap Factor         : 1
+[05/30 15:40:25     10s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/30 15:40:25     10s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/30 15:40:25     10s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/30 15:40:25     10s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/30 15:40:25     10s]  
+[05/30 15:40:25     10s]  Analysis View: analysis_normal_fast_min
+[05/30 15:40:25     10s]     RC-Corner Name        : rc_best
+[05/30 15:40:25     10s]     RC-Corner Index       : 1
+[05/30 15:40:25     10s]     RC-Corner Temperature : 0 Celsius
+[05/30 15:40:25     10s]     RC-Corner Cap Table   : '/home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/libs/mmmc/gpdk045.basic.CapTbl'
+[05/30 15:40:25     10s]     RC-Corner PreRoute Res Factor         : 1
+[05/30 15:40:25     10s]     RC-Corner PreRoute Cap Factor         : 1
+[05/30 15:40:25     10s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/30 15:40:25     10s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/30 15:40:25     10s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/30 15:40:25     10s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/30 15:40:25     10s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/30 15:40:25     10s] 
+[05/30 15:40:25     10s] Trim Metal Layers:
+[05/30 15:40:25     10s] LayerId::1 widthSet size::4
+[05/30 15:40:25     10s] LayerId::2 widthSet size::4
+[05/30 15:40:25     10s] LayerId::3 widthSet size::4
+[05/30 15:40:25     10s] LayerId::4 widthSet size::4
+[05/30 15:40:25     10s] LayerId::5 widthSet size::4
+[05/30 15:40:25     10s] LayerId::6 widthSet size::4
+[05/30 15:40:25     10s] LayerId::7 widthSet size::4
+[05/30 15:40:25     10s] LayerId::8 widthSet size::4
+[05/30 15:40:25     10s] LayerId::9 widthSet size::4
+[05/30 15:40:25     10s] LayerId::10 widthSet size::4
+[05/30 15:40:25     10s] LayerId::11 widthSet size::3
+[05/30 15:40:25     10s] eee: pegSigSF::1.070000
+[05/30 15:40:25     10s] Initializing multi-corner resistance tables ...
+[05/30 15:40:25     10s] eee: l::1 avDens::0.089092 usedTrk::32.073099 availTrk::360.000000 sigTrk::32.073099
+[05/30 15:40:25     10s] eee: l::2 avDens::0.117086 usedTrk::40.043275 availTrk::342.000000 sigTrk::40.043275
+[05/30 15:40:25     10s] eee: l::3 avDens::0.137000 usedTrk::49.319883 availTrk::360.000000 sigTrk::49.319883
+[05/30 15:40:25     10s] eee: l::4 avDens::0.048206 usedTrk::16.486549 availTrk::342.000000 sigTrk::16.486549
+[05/30 15:40:25     10s] eee: l::5 avDens::0.035366 usedTrk::12.731871 availTrk::360.000000 sigTrk::12.731871
+[05/30 15:40:25     10s] eee: l::6 avDens::0.027533 usedTrk::9.416375 availTrk::342.000000 sigTrk::9.416375
+[05/30 15:40:25     10s] eee: l::7 avDens::0.030177 usedTrk::10.863743 availTrk::360.000000 sigTrk::10.863743
+[05/30 15:40:25     10s] eee: l::8 avDens::0.027094 usedTrk::9.266082 availTrk::342.000000 sigTrk::9.266082
+[05/30 15:40:25     10s] eee: l::9 avDens::0.030275 usedTrk::10.899123 availTrk::360.000000 sigTrk::10.899123
+[05/30 15:40:25     10s] eee: l::10 avDens::0.138932 usedTrk::19.005848 availTrk::136.800000 sigTrk::19.005848
+[05/30 15:40:25     10s] eee: l::11 avDens::0.128411 usedTrk::18.491228 availTrk::144.000000 sigTrk::18.491228
+[05/30 15:40:25     10s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=1.000000 uaWlH=0.083022 aWlH=0.000000 lMod=0 pMax=0.807200 pMod=83 wcR=0.772700 newSi=0.001600 wHLS=1.931750 siPrev=0 viaL=0.000000
+[05/30 15:40:25     10s] Start generating vias ..
+[05/30 15:40:25     10s] #create default rule from bind_ndr_rule rule=0x7f8828778a00 0x7f8802292568
+[05/30 15:40:25     10s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[05/30 15:40:25     10s] #Skip building auto via since it is not turned on.
+[05/30 15:40:25     10s] Extracting standard cell pins and blockage ...... 
+[05/30 15:40:25     10s] Pin and blockage extraction finished
+[05/30 15:40:25     10s] Via generation completed.
+[05/30 15:40:25     10s] % Begin Load power constraints ... (date=05/30 15:40:25, mem=1354.8M)
+[05/30 15:40:25     10s] source /home/ci_inovador/Documentos/rom/backend/layout/work/to_drc_lvs.enc/rom_power_constraints.tcl
+[05/30 15:40:25     10s] 'set_default_switching_activity' finished successfully.
+[05/30 15:40:25     10s] % End Load power constraints ... (date=05/30 15:40:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=1361.4M, current mem=1361.4M)
+[05/30 15:40:25     10s] % Begin load AAE data ... (date=05/30 15:40:25, mem=1376.8M)
+[05/30 15:40:25     11s] AAE DB initialization (MEM=1588.22 CPU=0:00:00.0 REAL=0:00:00.0) 
+[05/30 15:40:25     11s] % End load AAE data ... (date=05/30 15:40:25, total cpu=0:00:00.4, real=0:00:00.0, peak res=1383.3M, current mem=1383.3M)
+[05/30 15:40:25     11s] 
+[05/30 15:40:25     11s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/30 15:40:25     11s] Summary for sequential cells identification: 
+[05/30 15:40:25     11s]   Identified SBFF number: 104
+[05/30 15:40:25     11s]   Identified MBFF number: 0
+[05/30 15:40:25     11s]   Identified SB Latch number: 0
+[05/30 15:40:25     11s]   Identified MB Latch number: 0
+[05/30 15:40:25     11s]   Not identified SBFF number: 16
+[05/30 15:40:25     11s]   Not identified MBFF number: 0
+[05/30 15:40:25     11s]   Not identified SB Latch number: 0
+[05/30 15:40:25     11s]   Not identified MB Latch number: 0
+[05/30 15:40:25     11s]   Number of sequential cells which are not FFs: 32
+[05/30 15:40:25     11s] Total number of combinational cells: 327
+[05/30 15:40:25     11s] Total number of sequential cells: 152
+[05/30 15:40:25     11s] Total number of tristate cells: 10
+[05/30 15:40:25     11s] Total number of level shifter cells: 0
+[05/30 15:40:25     11s] Total number of power gating cells: 0
+[05/30 15:40:25     11s] Total number of isolation cells: 0
+[05/30 15:40:25     11s] Total number of power switch cells: 0
+[05/30 15:40:25     11s] Total number of pulse generator cells: 0
+[05/30 15:40:25     11s] Total number of always on buffers: 0
+[05/30 15:40:25     11s] Total number of retention cells: 0
+[05/30 15:40:25     11s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4[05/30 15:40:25     11s] 
+[05/30 15:40:25     11s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ CLKBUFX6 CLKBUFX8
+[05/30 15:40:25     11s] Total number of usable buffers: 16
+[05/30 15:40:25     11s] List of unusable buffers:
+[05/30 15:40:25     11s] Total number of unusable buffers: 0
+[05/30 15:40:25     11s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[05/30 15:40:25     11s] Total number of usable inverters: 19
+[05/30 15:40:25     11s] List of unusable inverters:
+[05/30 15:40:25     11s] Total number of unusable inverters: 0
+[05/30 15:40:25     11s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[05/30 15:40:25     11s] Total number of identified usable delay cells: 8
+[05/30 15:40:25     11s] List of identified unusable delay cells:
+[05/30 15:40:25     11s] Total number of identified unusable delay cells: 0
+[05/30 15:40:25     11s] 
+[05/30 15:40:25     11s] TimeStamp Deleting Cell Server Begin ...
+[05/30 15:40:25     11s] 
+[05/30 15:40:25     11s] TimeStamp Deleting Cell Server End ...
+[05/30 15:40:25     11s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[05/30 15:40:25     11s] timing_enable_separate_device_slew_effect_sensitivities
+[05/30 15:40:25     11s] #% End load design ... (date=05/30 15:40:25, total cpu=0:00:01.8, real=0:00:02.0, peak res=1407.3M, current mem=1383.7M)
+[05/30 15:40:25     11s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/30 15:40:25     11s] 
+[05/30 15:40:25     11s] *** Summary of all messages that are not suppressed in this session:
+[05/30 15:40:25     11s] Severity  ID               Count  Summary                                  
+[05/30 15:40:25     11s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/30 15:40:25     11s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/30 15:40:25     11s] WARNING   IMPDBTCL-321         1  The attribute '%s' still works but will ...
+[05/30 15:40:25     11s] WARNING   IMPEXT-2662          2  Cap table %s does not have the EXTENDED ...
+[05/30 15:40:25     11s] WARNING   IMPEXT-2523          1  Option 'extract_rc_cap_table_basic' shou...
+[05/30 15:40:25     11s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/30 15:40:25     11s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[05/30 15:40:25     11s] WARNING   IMPUDM-33            3  Global variable "%s" is obsolete and wil...
+[05/30 15:40:25     11s] WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+[05/30 15:40:25     11s] *** Message Summary: 34 warning(s), 0 error(s)
+[05/30 15:40:25     11s] 
+[05/30 15:40:27     12s] @innovus 2> 

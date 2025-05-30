@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.24.09.d
+-RUNMODE
+/home/ci_inovador/Documentos/rom/frontend/source/matrix.sv
+/home/ci_inovador/Documentos/rom/frontend/source/hdec.sv
+/home/ci_inovador/Documentos/rom/frontend/source/rom.sv
+/home/ci_inovador/Documentos/rom/frontend/testbench/rom_tb.sv
+-DEFINE
+dir_home=\"../encoder/rom.hex\"
+-CDSLIB
+./xcelium.d/run.lnx8664.24.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.24.09.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.24.09.d/xllibs
+-ALLOWUNBOUND
+-hastop
