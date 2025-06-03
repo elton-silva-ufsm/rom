@@ -53,11 +53,11 @@ set_db init_power_nets $NET_ONE
 set_db init_ground_nets $NET_ZERO
 read_mmmc ${LAYOUT_DIR}/scripts/${DESIGNS}.view
 read_physical -lef $LEF_INIT
-read_netlist ../../synthesis/deliverables/${DESIGNS}.v
+# read_netlist ../../synthesis/deliverables/${DESIGNS}.v
 
 # io
-# read_netlist "../../synthesis/deliverables/${DESIGNS}.v ../../synthesis/io/${DESIGNS}_chip.sv ../../synthesis/io/${DESIGNS}_io.sv"
-# read_io_file ../../io/rom.io
+read_netlist "../../synthesis/deliverables/${DESIGNS}.v ../../synthesis/io/${DESIGNS}_chip.v ../../synthesis/io/${DESIGNS}_io.v"
+read_io_file ../../synthesis/io/rom.io
 
 init_design
 connect_global_net $NET_ONE -type pg_pin -pin_base_name $NET_ONE -inst_base_name *
@@ -68,10 +68,10 @@ set_db design_process_node 45
 #-----------------------------------------------------------------------------
 
 # -core_density_size <aspectratio [rowdensity [left bottom right top]]>
-create_floorplan -core_margins_by die -site CoreSite -core_density_size 0.25 0.8 2.5 2.5 2.5 2.5
+# create_floorplan -core_margins_by die -site CoreSite -core_density_size 0.25 0.8 2.5 2.5 2.5 2.5
 # create_floorplan -core_margins_by die -site CoreSite -core_density_size 0.25 0.8 3 3 3 3
 #IO
-# create_floorplan -site CoreSite -core_density_size 0.2 0.7 232.0 232.0 232.0 233.0 ;# chip: io cells
+create_floorplan -site CoreSite -core_density_size 0.2 0.7 232.0 232.0 232.0 233.0 ;# chip: io cells
 
 #------------------Add ring (Power planning)----------------------------------
 #-----------------------------------------------------------------------------
@@ -140,7 +140,7 @@ time_design -post_cts -hold
 
 #-------------------------------Routing---------------------------------------
 #-----------------------------------------------------------------------------
-route_design
+# route_design
 
 #----------------------Post-route timing verification-------------------------
 #-----------------------------------------------------------------------------
@@ -159,14 +159,14 @@ add_fillers -base_cells {FILL8 FILL64 FILL4 FILL32 FILL2 FILL16 FILL1}
 
 #--------------------------Fix DRC violations---------------------------------
 #-----------------------------------------------------------------------------
-check_drc
-delete_routes -regular_wire_with_drc ;# command to delete routed nets with DRC violations
-route_design ;# re-route the design
-check_drc
-route_eco -fix_drc ;# tries to fix remaining violation nets
-check_drc
-route_eco -route_only_layers 2:6;# route_only_layers option restricts eco routing to specified layer range 
-check_drc
+# check_drc
+# delete_routes -regular_wire_with_drc ;# command to delete routed nets with DRC violations
+# route_design ;# re-route the design
+# check_drc
+# route_eco -fix_drc ;# tries to fix remaining violation nets
+# check_drc
+# route_eco -route_only_layers 2:6;# route_only_layers option restricts eco routing to specified layer range 
+# check_drc
 
 #-----------------------------Write verilog-----------------------------------
 #-----------------------------------------------------------------------------

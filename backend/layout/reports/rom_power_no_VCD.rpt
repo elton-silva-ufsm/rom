@@ -1,44 +1,48 @@
 
 Power Net Detected:
         Voltage	    Name
+             0V	    rom_io_i/VSS
+          1.32V	    rom_io_i/VDD
              0V	    VSS
           1.32V	    VDD
 Using Power View: analysis_normal_fast_min.
-AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: opIsDesignInPostRouteState() is 0
 AAE_INFO: resetNetProps viewIdx 1 
 Starting SI iteration 1 using Infinite Timing Windows
 #################################################################################
-# Design Stage: PostRoute
-# Design Name: rom
+# Design Stage: PreRoute
+# Design Name: rom_chip
 # Design Mode: 45nm
 # Analysis Mode: MMMC OCV 
 # Parasitics Mode: SPEF/RCDB 
 # Signoff Settings: SI On 
 #################################################################################
 AAE_INFO: 1 threads acquired from CTE.
-Start delay calculation (fullDC) (1 T). (MEM=2051.46)
-Total number of fetched objects 187
+Start delay calculation (fullDC) (1 T). (MEM=1994.56)
+Total number of fetched objects 219
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-AAE_INFO-618: Total number of nets in the design is 239,  92.1 percent of the nets selected for SI analysis
-End delay calculation. (MEM=2051.46 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=2051.46 CPU=0:00:00.0 REAL=0:00:00.0)
-Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2051.5M)
+AAE_INFO-618: Total number of nets in the design is 284,  77.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1994.56 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1994.56 CPU=0:00:00.0 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1994.6M)
 Add other clocks and setupCteToAAEClockMapping during iter 1
-Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2051.5M)
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1994.6M)
 Starting SI iteration 2
-Start delay calculation (fullDC) (1 T). (MEM=2005.36)
-Glitch Analysis: View analysis_normal_fast_min -- Total Number of Nets Skipped = 2. 
-Glitch Analysis: View analysis_normal_fast_min -- Total Number of Nets Analyzed = 187. 
-Total number of fetched objects 187
+Start delay calculation (fullDC) (1 T). (MEM=1944.46)
+Glitch Analysis: View analysis_normal_fast_min -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View analysis_normal_fast_min -- Total Number of Nets Analyzed = 219. 
+Total number of fetched objects 219
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-AAE_INFO-618: Total number of nets in the design is 239,  10.0 percent of the nets selected for SI analysis
-End delay calculation. (MEM=2050.05 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=2050.05 CPU=0:00:00.0 REAL=0:00:00.0)
+AAE_INFO-618: Total number of nets in the design is 284,  26.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1990.24 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1990.24 CPU=0:00:00.0 REAL=0:00:00.0)
 Load RC corner of view analysis_normal_fast_min
 Set Default Frequency 100MHz.
 
 Begin Power Analysis
 
+             0V	    rom_io_i/VSS
+          1.32V	    rom_io_i/VDD
              0V	    VSS
           1.32V	    VDD
 
@@ -50,46 +54,46 @@ Begin Processing Timing Library for Power Calculation
 
 Begin Processing Power Net/Grid for Power Calculation
 
-Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1710.02MB/3568.93MB/1710.02MB)
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1687.86MB/3509.01MB/1687.86MB)
 
 Begin Processing Timing Window Data for Power Calculation
 
-Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1710.02MB/3568.93MB/1710.02MB)
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1687.86MB/3509.01MB/1687.86MB)
 
 Begin Processing User Attributes
 
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1710.02MB/3568.93MB/1710.02MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1687.86MB/3509.01MB/1687.86MB)
 
 Begin Processing Signal Activity
 
 
 Starting Levelizing
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT)
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 10%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 20%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 30%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 40%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 50%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 60%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 70%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 80%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 90%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT)
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 10%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 20%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 30%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 40%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 50%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 60%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 70%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 80%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 90%
 
 Finished Levelizing
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT)
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT)
 
 Starting Activity Propagation
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT)
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT)
 ** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
 Use 'set_default_switching_activity -input_activity' command to change the default activity value.
 
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 10%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 20%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 30%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 10%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 20%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 30%
 
 Finished Activity Propagation
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT)
-Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1710.02MB/3568.93MB/1710.02MB)
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1688.38MB/3509.01MB/1688.38MB)
 
 Begin Power Computation
 
@@ -102,43 +106,43 @@ Begin Power Computation
 
 
 Starting Calculating power
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT)
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT)
  ... Calculating switching power
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 10%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 20%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 30%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 40%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 50%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 10%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 20%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 30%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 40%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 50%
  ... Calculating internal and leakage power
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 60%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 70%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 80%
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT): 90%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 60%
+2025-Jun-03 14:50:34 (2025-Jun-03 17:50:34 GMT): 70%
+2025-Jun-03 14:50:35 (2025-Jun-03 17:50:35 GMT): 80%
+2025-Jun-03 14:50:35 (2025-Jun-03 17:50:35 GMT): 90%
 
 Finished Calculating power
-2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT)
+2025-Jun-03 14:50:35 (2025-Jun-03 17:50:35 GMT)
       # of MSMV cell(s) missing power_level: 0
-Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1711.67MB/3576.93MB/1711.67MB)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1689.52MB/3517.02MB/1689.52MB)
 
 Begin Processing User Attributes
 
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1711.67MB/3576.93MB/1711.67MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1689.52MB/3517.02MB/1689.52MB)
 
-Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1711.67MB/3576.93MB/1711.67MB)
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1689.52MB/3517.02MB/1689.52MB)
 
 Begin Boundary Leakage Calculation
 Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
-mem(process/total/peak)=1711.67MB/3576.93MB/1711.67MB)
+mem(process/total/peak)=1689.52MB/3517.02MB/1689.52MB)
 Begin Static Power Report Generation
 *----------------------------------------------------------------------------------------
 *	Innovus 21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
 *	
 *
-* 	Date & Time:	2025-Jun-02 14:35:06 (2025-Jun-02 17:35:06 GMT)
+* 	Date & Time:	2025-Jun-03 14:50:35 (2025-Jun-03 17:50:35 GMT)
 *
 *----------------------------------------------------------------------------------------
 *
-*	Design: rom
+*	Design: rom_chip
 *
 *	Liberty Libraries used:
 *	        analysis_normal_fast_min: /home/tools/design_kits/cadence/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib
@@ -170,16 +174,65 @@ Begin Static Power Report Generation
 *       report_power
 *
 -----------------------------------------------------------------------------------------
+  12 instances have no static power
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr0 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr1 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr2 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr3 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr4 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr5 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr6 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr7 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr8 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/PAD_adr9 (PADDI) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/VDDCORE (PADVDD) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance rom_io_i/VSSCORE (PADVSS) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
 *
 
 
 
 Total Power
 -----------------------------------------------------------------------------------------
-Total Internal Power:       11.26886108 	   23.6397%
-Total Switching Power:      36.34882454 	   76.2521%
-Total Leakage Power:         0.05161235 	    0.1083%
-Total Power:                47.66929797
+Total Internal Power:       11.07509498 	   12.5263%
+Total Switching Power:      77.28775881 	   87.4152%
+Total Leakage Power:         0.05166602 	    0.0584%
+Total Power:                88.41451981
 -----------------------------------------------------------------------------------------
 
 
@@ -187,36 +240,36 @@ Group                           Internal   Switching     Leakage       Total  Pe
                                 Power      Power         Power         Power  (%)        
 -----------------------------------------------------------------------------------------
 Sequential                             0           0           0           0           0
-Macro                                  0           0           0           0           0
+Macro                                  0       32.75           0   3.275e+04       37.04
 IO                                     0           0           0           0           0
-Combinational                      11.27       36.35     0.05161   4.767e+04         100
+Combinational                      11.08       44.54     0.05167   5.566e+04       62.96
 Clock (Combinational)                  0           0           0           0           0
 Clock (Sequential)                     0           0           0           0           0
 -----------------------------------------------------------------------------------------
-Total                          1.127e+04   3.635e+04       51.61   4.767e+04       1e+05
+Total                          1.108e+04   7.729e+04       51.67   8.841e+04       1e+05
 -----------------------------------------------------------------------------------------
 
 
 Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
                                 Power      Power         Power         Power  (%)        
 -----------------------------------------------------------------------------------------
-VDD                      1.32  1.127e+04   3.635e+04       51.61   4.767e+04       1e+05
+VDD                      1.32  1.108e+04   7.729e+04       51.67   8.841e+04       1e+05
  
  
 -----------------------------------------------------------------------------------------
 *	Power Distribution Summary: 
-*              Highest Average Power:                g412__6783 (NOR2BX1):           0.9433
-*              Highest Leakage Power:          hdec/g2050__8246 (NOR2X4):        0.0005673
-*                Total Cap:      1.65126e-12 F
-*                Total instances in design:   186
-*                Total instances in design with no power:     0
-*                Total instances in design with no activty:     0
+*              Highest Average Power:          rom_i/g407__5107 (NOR2BX1):            1.961
+*              Highest Leakage Power:    rom_i/hdec/g2050__8246 (NOR2X4):        0.0005673
+*                Total Cap:      4.31991e-12 F
+*                Total instances in design:   231
+*                Total instances in design with no power:    12
+*                Total instances in design with no activty:     2
 
-*                Total Fillers and Decap:     0
+*                Total Fillers and Decap:    12
 -----------------------------------------------------------------------------------------
  
-** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 45 fillers in the design
 
 Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
-mem(process/total/peak)=1711.67MB/3576.93MB/1711.67MB)
+mem(process/total/peak)=1690.45MB/3517.02MB/1690.45MB)
 

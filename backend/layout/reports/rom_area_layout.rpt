@@ -1,5 +1,7 @@
     Hinst Name       Module Name          Inst Count           Total Area
 ----------------------------------------------------------------------
-rom                                              186              359.100
- hdec                hdec                        154              315.324
- mtrx                matrix                        0                0.000
+rom_chip                                         231           648359.100
+ rom_i               rom                         186              359.100
+  rom_i/hdec         hdec                        154              315.324
+  rom_i/mtrx         matrix                        0                0.000
+ rom_io_i            rom_io                       45           648000.000

@@ -1,19 +1,20 @@
 Switching SI Aware to true by default in postroute mode   
 AAE_INFO: switching -siAware from false to true ...
 AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
-*** time_design #4 [begin] : totSession cpu/real = 0:00:20.1/0:00:21.7 (0.9), mem = 1867.1M
- Reset EOS DB
-Ignoring AAE DB Resetting ...
+*** time_design #4 [begin] : totSession cpu/real = 0:00:15.9/0:00:17.6 (0.9), mem = 1875.9M
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or set_db  command. The parasitic data can be regenerated either by extracting the design using the extract_rc command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+**WARN: (IMPOPT-7139):	'set_db extract_rc_coupled false' has been implicitly activated since current delay calulation is under SIAware false mode.
 **WARN: (IMPEXT-3518):	The lower process node is set (using command 'set_design_mode') but the technology file for TQuantus extraction not specified. Therefore, going for post_route (extract_rc_effort_level low) extraction instead of recommended extractor 'TQuantus' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQuantus extraction to take place.
-Extraction called for design 'rom' of instances=186 and nets=239 using extraction engine 'post_route' at effort level 'low' .
-post_route (extract_rc_effort_level low) RC Extraction called for design rom.
+Extraction called for design 'rom_chip' of instances=237 and nets=284 using extraction engine 'post_route' at effort level 'low' .
+post_route (extract_rc_effort_level low) RC Extraction called for design rom_chip.
 RC Extraction called in multi-corner(2) mode.
 **WARN: (IMPEXT-6166):	Capacitance table file(s) without the EXTENDED section is being used for RC extraction. This is not recommended because it results in lower accuracy for clock nets in pre_route extraction and for all nets in post_route extraction using extract_rc_effort_level low. Regenerate capacitance table file(s) using the write_cap_table command.
 Type 'man IMPEXT-6166' for more detail.
 Process corner(s) are loaded.
  Corner: rc_worst
  Corner: rc_best
-extractDetailRC Option : -outfile /tmp/innovus_temp_64850_eltonsilva_ci_inovador_sDlaYU/rom_64850_iei4Ig.rcdb.d  -basic
+extractDetailRC Option : -outfile /tmp/innovus_temp_41566_eltonsilva_ci_inovador_gGorHB/rom_chip_41566_3xxOzr.rcdb.d  -basic
 RC Mode: PostRoute extract_rc_effort_level low [Basic CapTable, RC Table Resistances]
       RC Corner Indexes            0       1   
 Capacitance Scaling Factor   : 1.00000 1.00000 
@@ -23,60 +24,98 @@ Clock Cap. Scaling Factor    : 1.00000 1.00000
 Clock Res. Scaling Factor    : 1.00000 1.00000 
 Shrink Factor                : 1.00000
 Initializing multi-corner resistance tables ...
-Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1867.1M)
-Extracted 10.0946% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 20.1104% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 30.1262% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 40.142% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 50.1577% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 60.0946% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 70.1104% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 80.1262% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 90.142% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Extracted 100% (CPU Time= 0:00:00.0  MEM= 1919.1M)
-Number of Extracted Resistors     : 2343
-Number of Extracted Ground Cap.   : 2444
-Number of Extracted Coupling Cap. : 3756
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1874.9M)
+Extracted 10.103% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 20.0772% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 30.1158% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 40.0901% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 50.1287% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 60.103% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 70.0772% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 80.1158% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 90.0901% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Number of Extracted Resistors     : 3169
+Number of Extracted Ground Cap.   : 3345
+Number of Extracted Coupling Cap. : 0
+PostRoute (extract_rc_effort_level low) RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 1922.898M)
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or set_db  command. The parasitic data can be regenerated either by extracting the design using the extract_rc command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'set_design_mode') but the technology file for TQuantus extraction not specified. Therefore, going for post_route (extract_rc_effort_level low) extraction instead of recommended extractor 'TQuantus' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQuantus extraction to take place.
+Extraction called for design 'rom_chip' of instances=237 and nets=284 using extraction engine 'post_route' at effort level 'low' .
+post_route (extract_rc_effort_level low) RC Extraction called for design rom_chip.
+RC Extraction called in multi-corner(2) mode.
+**WARN: (IMPEXT-6166):	Capacitance table file(s) without the EXTENDED section is being used for RC extraction. This is not recommended because it results in lower accuracy for clock nets in pre_route extraction and for all nets in post_route extraction using extract_rc_effort_level low. Regenerate capacitance table file(s) using the write_cap_table command.
+Type 'man IMPEXT-6166' for more detail.
+Process corner(s) are loaded.
+ Corner: rc_worst
+ Corner: rc_best
+extractDetailRC Option : -outfile /tmp/innovus_temp_41566_eltonsilva_ci_inovador_gGorHB/rom_chip_41566_3xxOzr.rcdb.d -maxResLength 200  -basic
+RC Mode: PostRoute extract_rc_effort_level low [Basic CapTable, RC Table Resistances]
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1898.9M)
+Extracted 10.103% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 20.0772% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 30.1158% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 40.0901% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 50.1287% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 60.103% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 70.0772% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 80.1158% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 90.0901% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 1938.9M)
+Number of Extracted Resistors     : 3169
+Number of Extracted Ground Cap.   : 3345
+Number of Extracted Coupling Cap. : 4140
 Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
  Corner: rc_worst
  Corner: rc_best
-Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1903.1M)
-PostRoute (extract_rc_effort_level low) RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1911.090M)
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1922.9M)
+PostRoute (extract_rc_effort_level low) RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:01.0  MEM: 1926.898M)
 Starting delay calculation for Setup views
-AAE_INFO: opIsDesignInPostRouteState() is 1
-AAE_INFO: deleting AAE DB due to opIsDesignInPostRouteState() is changed ...
-AAE DB initialization (MEM=1918.63 CPU=0:00:00.0 REAL=0:00:00.0) 
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=1924.9 CPU=0:00:00.0 REAL=0:00:00.0) 
 AAE_INFO: resetNetProps viewIdx 0 
 Starting SI iteration 1 using Infinite Timing Windows
 #################################################################################
-# Design Stage: PostRoute
-# Design Name: rom
+# Design Stage: PreRoute
+# Design Name: rom_chip
 # Design Mode: 45nm
 # Analysis Mode: MMMC OCV 
 # Parasitics Mode: SPEF/RCDB 
 # Signoff Settings: SI On 
 #################################################################################
 AAE_INFO: 1 threads acquired from CTE.
-Start delay calculation (fullDC) (1 T). (MEM=1930.24)
+Start delay calculation (fullDC) (1 T). (MEM=1936.51)
+*** Calculating scaling factor for slow libraries using the default operating condition of each library.
 Initializing multi-corner resistance tables ...
-Total number of fetched objects 187
+Total number of fetched objects 219
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-AAE_INFO-618: Total number of nets in the design is 239,  91.6 percent of the nets selected for SI analysis
-End delay calculation. (MEM=1982.55 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1982.55 CPU=0:00:00.1 REAL=0:00:01.0)
-Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1974.6M)
+AAE_INFO-618: Total number of nets in the design is 284,  77.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1988.82 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1988.82 CPU=0:00:00.1 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1980.8M)
 Add other clocks and setupCteToAAEClockMapping during iter 1
-Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1974.6M)
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1980.8M)
 Starting SI iteration 2
-Start delay calculation (fullDC) (1 T). (MEM=1909.46)
-Glitch Analysis: View analysis_normal_slow_max -- Total Number of Nets Skipped = 0. 
-Glitch Analysis: View analysis_normal_slow_max -- Total Number of Nets Analyzed = 187. 
-Total number of fetched objects 187
+Start delay calculation (fullDC) (1 T). (MEM=1924.73)
+**WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -noisy_waveform -threshold 0' after timing analysis. Delay report is enabled by setting 'set_db si_delay_enable_report true' before timing analysis.
+Type 'man IMPESI-3140' for more detail.
+Glitch Analysis: View analysis_normal_slow_max -- Total Number of Nets Skipped = 2. 
+Glitch Analysis: View analysis_normal_slow_max -- Total Number of Nets Analyzed = 219. 
+Total number of fetched objects 219
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-AAE_INFO-618: Total number of nets in the design is 239,  11.7 percent of the nets selected for SI analysis
-End delay calculation. (MEM=1954.15 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1954.15 CPU=0:00:00.0 REAL=0:00:00.0)
-*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:01.0 totSessionCpu=0:00:20.5 mem=1954.2M)
+AAE_INFO-618: Total number of nets in the design is 284,  27.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1969.42 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1969.42 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=0:00:16.6 mem=1969.4M)
 
 ------------------------------------------------------------------
          time_design Summary
@@ -100,15 +139,14 @@ Setup views included:
 |                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
 +----------------+------------------+------------+------------------+
 |   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
-|   max_tran     |     32 (32)      |   -1.752   |     32 (32)      |
+|   max_tran     |     10 (20)      |   -0.413   |     10 (20)      |
 |   max_fanout   |      0 (0)       |     0      |      0 (0)       |
 |   max_length   |      0 (0)       |     0      |      0 (0)       |
 +----------------+------------------+------------+------------------+
 
-Density: 79.909%
+Density: 5.292%
 ------------------------------------------------------------------
 Reported timing to dir ./timingReports
-Total CPU time: 0.47 sec
-Total Real time: 1.0 sec
-Total Memory Usage: 1927.734375 Mbytes
-Reset AAE Options
+Total CPU time: 0.69 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 1942.996094 Mbytes

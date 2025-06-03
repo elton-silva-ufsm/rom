@@ -37,3 +37,14 @@ mem[1023] = 1dc19e3b45
 
 write_io_file -locations rom.save.io
 write_netlist rom_io.v
+
+44 pinos
+(ordenar como 48), 48/6 = 8, proporção 1x2, 
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0                               0
+0                               0
+0             16w 6h            0
+0                               0
+0                               0
+0                               0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
