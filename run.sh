@@ -81,13 +81,18 @@ g)
 
 i)
     cd ${BACKEND_DIR}/layout/work || exit
-    echo "Carregar DataBase (s) ?"
+    echo "[d] Abrir Database"
+    echo "[i] Abrir Innovus"
+    echo "[ENTER] Sintetizar Layout"
+
     read -r db
 
-    if [[ "$db" == "s" ]]; then
-        innovus -stylus -overwrite -db to_drc_lvs.enc
+    if [[ "$db" == "d" ]]; then
+        innovus -stylus -overwrite -db to_drc_lvs.enc -log database.log
+    elif [[ "$db" == "i" ]]; then
+        innovus -stylus -overwrite -log manual.log
     else
-        innovus -stylus -overwrite -files ../scripts/layout.tcl
+        innovus -stylus -overwrite -files ../scripts/layout.tcl -log synthesis.log
     fi
 
 

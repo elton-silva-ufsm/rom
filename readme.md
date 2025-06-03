@@ -1,87 +1,11 @@
-Plano de Estudos para Projeto de ROM com ECC (2 meses de projeto, começa em 1 mês)
-📅 Duração do plano: 4 semanas (antes do início do estágio)
+# Tecnologia
+XH018 0.18μ HV NVM CMOS E-FLASH 6M 
 
-🧱 1. Revisão e Prática em HDL (SystemVerilog/VHDL)
-Objetivo: Garantir domínio em modelagem de ROM, controle de leitura e integração com blocos ECC.
-Conteúdo:
-    Implementação de ROMs com inicialização por arquivo ($readmemh, etc.)
-    Módulo de detecção/correção com Hamming SECDED (Single Error Correction, Double Error Detection)
-    Modelagem de decodificadores combinacionais eficientes
-Tarefas:
-    ✅ Implementar ROM 32 bits x N palavras com Hamming SECDED
-    ✅ Simular casos de erro único e duplo
-    ✅ Analisar criticidade do caminho lógico (Critical Path)
-Recursos sugeridos:
-Clifford Wolf's Yosys Tutorials
-IEEE 1164 VHDL or IEEE 1800 SystemVerilog specs
+## Modulos
 
+LPMOS, MET3, MET4, METMID, METTHK, MRPOLY, ISOMOS, LVT, DMOS, HVMOS, SCHOTTKY, MIM, NVM, FLASH
 
-⚙️ 2. Ferramentas de Síntese e P&R (Genus + Innovus)
-Objetivo: Otimizar tempo de acesso da ROM com ECC, gerenciar área e timing.
-Conteúdo:
-    Floorplanning básico para IPs pequenos
-    Otimização para latência mínima
-    Análise de timing com e sem ECC
-    Constraints (.sdc) para clock, I/O, área
-Tarefas:
-    ✅ Síntese e P&R de uma ROM com e sem ECC
-    ✅ Verificar impacto em setup e hold
-    ✅ Gerar relatórios de timing e área
-Dica: Estude pipelining condicional caso o ECC cause aumento indesejado na latência.
-
-
-🧮 3. Códigos de Correção de Erros (ECC)
-Objetivo: Ter domínio em Hamming (SECDED), sua lógica e limitações.
-Conteúdo:
-    Hamming (7,4), (72,64), generalização para 32 bits
-    Geração e verificação do syndrome vector
-    Decodificador lógico para identificar e corrigir o erro
-Tarefas:
-    ✅ Construir tabela verdade para detecção e correção
-    ✅ Implementar um ECC encoder/decoder em Verilog
-    ✅ Simular com erro injetado
-Recursos sugeridos:
-Livro: Error Control Coding – Lin & Costello (capítulos iniciais)
-Artigo prático: “ECC Implementation in ASIC Memory” (Synopsys/EDA playground papers)
-
-
-🧪 4. Testbenches e Verificação
-Objetivo: Desenvolver ambiente robusto de verificação funcional e de falhas.
-Conteúdo:
-    Testbench com injeção de falhas (bit-flip controlado)
-    Geração aleatória de endereços e dados com erros
-    Verificação funcional com scoreboards e assertions
-Tarefas:
-    ✅ Criar ambiente de simulação para ECC
-    ✅ Validar correção de erro único e detecção de erro duplo
-    ✅ Medir cobertura funcional (opcional: uso de UVM leve)
-
-
-🧠 Extra (Se tiver tempo)
-Estudar uso de Hamming hierárquico para blocos maiores
-Comparar com BCH simples (dependendo da tecnologia-alvo)
-Revisar implicações físicas: DRC, LVS, IR drop para ROMs grandes
-
-
-
-📋 Resumo Semanal
-Semana
-Foco Principal
-Entregas/Checkpoints
-1
-HDL + Código de Hamming
-ROM básica com ECC funcionando
-2
-Síntese e Análise de Timing com Genus
-Análise de área e timing
-3
-P&R com Innovus + Pipeline opcional
-Bloco completo com relatórios físicos
-4
-Testbenches + Verificação ECC
-Simulação robusta com injeção de falhas
-
-////// notas
+# Notas
 
 dado:11001010111111101011101011001010
 separado: 110010 101111111010111 0101100 101 0
