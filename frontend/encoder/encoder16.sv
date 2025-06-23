@@ -39,6 +39,8 @@ initial begin
 
     $fclose(file);
     $fclose(file1);
+    $fclose(file2);
+    $finish;
 end
 
 endmodule
