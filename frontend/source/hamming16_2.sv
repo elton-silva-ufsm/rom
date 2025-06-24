@@ -1,6 +1,6 @@
 module hamming16_2 (
-    input logic [20:0] d_in,   // 21-bit encoded input
-    output logic [15:0] d_out, // 16-bit decoded output 
+    input logic [20:0] d_in,    // 21-bit encoded input
+    output logic [15:0] d_out,  // 16-bit decoded output 
     output logic error_flag     // Error flag indicating if an error was detected
 )
 
